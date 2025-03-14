@@ -1,5 +1,5 @@
 {
-  "name": "@farhan888/demo_publish_to_gpr_by_gha",
+  "name": "demo_publish_to_gpr_by_gha",
   "version": "0.0.3",
   "description": "Demo project to publish in Github Package Registry using Github Actions",
   "main": "index.js",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/farhan888/demo_publish_to_gpr_by_gha/issues"
   },
-  "homepage": "https://github.com/farhan888/demo_publish_to_gpr_by_gha#readme",
-  "publishConfig": {
-    "access": "public"
-  }
+  "homepage": "https://github.com/farhan888/demo_publish_to_gpr_by_gha#readme"
 }
