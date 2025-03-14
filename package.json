@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/farhan888/demo_publish_to_gpr_by_gha/issues"
   },
-  "homepage": "https://github.com/farhan888/demo_publish_to_gpr_by_gha#readme"
+  "homepage": "https://github.com/farhan888/demo_publish_to_gpr_by_gha#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
