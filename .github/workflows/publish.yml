@@ -11,7 +11,8 @@ on:
 jobs:
   publish-github:
     name: Publish to GitHub Packages
-    uses: ./.github/workflows/common-publish.yml
+    uses: ./.github/workflows/common_publish.yml
     with:
       registry-url: "https://npm.pkg.github.com"
+    secrets:
       node-auth-token: ${{ secrets.GITHUB_TOKEN }}
