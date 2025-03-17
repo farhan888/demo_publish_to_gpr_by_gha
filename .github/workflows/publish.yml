@@ -14,5 +14,4 @@ jobs:
     uses: ./.github/workflows/common-publish.yml
     with:
       registry-url: "https://npm.pkg.github.com"
-    secrets:
       node-auth-token: ${{ secrets.GITHUB_TOKEN }}

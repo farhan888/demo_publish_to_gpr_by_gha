@@ -10,7 +10,6 @@ on:
         required: false
         type: string
         default: '18'
-    secrets:
       node-auth-token:
         required: true
 
