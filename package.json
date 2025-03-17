@@ -1,6 +1,6 @@
 {
   "name": "@farhan888/demo_publish_to_gpr_by_gha",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Demo project to publish in Github Package Registry using Github Actions",
   "main": "index.js",
   "scripts": {

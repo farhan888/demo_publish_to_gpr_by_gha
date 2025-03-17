@@ -1,0 +1,36 @@
+name: Common Publish Steps
+
+on:
+  workflow_call:
+    inputs:
+      registry-url:
+        required: true
+        type: string
+      node-version:
+        required: false
+        type: string
+        default: '18'
+    secrets:
+      node-auth-token:
+        required: true
+
+jobs:
+  common-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          registry-url: ${{ inputs.registry-url }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.node-auth-token }}
